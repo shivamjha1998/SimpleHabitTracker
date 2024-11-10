@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 export const HabitContext = createContext();
 
 export const HabitProvider = ({children}) => {
-  const [habitData, setHabitData] = useState(Array(31).fill(false));
+  const [habitData, setHabitData] = useState(Array(10).fill(false));
 
   // Load data on initial render
   useEffect(() => {
