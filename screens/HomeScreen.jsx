@@ -9,7 +9,7 @@ const HomeScreen = ({navigation}) => {
   const {habitData, toggleDay} = useContext(HabitContext);
 
   return (
-    <View style={styles.backgroundColor}>
+    <View style={styles.container}>
       <Text>Daily Habit Tracker</Text>
       {habitData.map((isChecked, index) => (
         <DailyCheckbox
