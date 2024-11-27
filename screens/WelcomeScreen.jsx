@@ -27,7 +27,9 @@ const WelcomeScreen = ({navigation}) => {
         <Text style={styles.plusIcon}>+</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.loginButton}>
+      <TouchableOpacity
+        style={styles.loginButton}
+        onPress={() => navigation.navigate('Login')}>
         <Text style={styles.loginButtonText}>Login</Text>
         <Text style={styles.arrowIcon}>→</Text>
       </TouchableOpacity>
@@ -74,7 +76,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 100,
-    backgroundColor: '#DDA15E',
+    backgroundColor: '#EDCD9F',
     justifyContent: 'center',
     alignItems: 'center',
   },
