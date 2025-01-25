@@ -24,7 +24,9 @@ const HomeScreen = ({navigation}) => {
           <Text style={styles.welcomeText}>Welcome to your habit tracker</Text>
         </View>
         <View style={styles.customShape}>
-          <TouchableOpacity style={styles.addButton}>
+          <TouchableOpacity
+            style={styles.addButton}
+            onPress={() => navigation.navigate('Summary')}>
             <Text style={styles.addButtonText}>+</Text>
           </TouchableOpacity>
         </View>
